@@ -1,0 +1,33 @@
+.recommendedvideos {
+  flex: 1;
+  background: transparent;
+  padding: 0px 20px;
+  width: 100%;
+}
+.recommendedvideos > h2 {
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+.recommendedvideos_videos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  grid-template-rows: auto;
+}
+@media screen and (max-width: 900px) {
+  .recommendedvideos_videos {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .recommendedvideos {
+    flex: 1;
+  }
+  .recommendedvideos_videos {
+    grid-template-columns: 1fr;
+    padding: 0px;
+    margin: 0;
+  }
+}

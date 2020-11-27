@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+.page {
+  padding: 15px;
+  /* display: flex; */
+  flex-wrap: wrap;
+}
+.leftpart {
+  flex: 1;
+}
+.rightpart {
+  flex: 1;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  text-transform: capitalize;
+}
+.rightpart>h1{
+  color:red;
+}
+.vid_datails > p{
+  margin: 0;
+  padding: 0;
+}
+.vid_datails > h4{
+  margin: 0;
+  padding: 5px;
+}
+.like_bar {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  color: gray;
+  font-size: 14px;
+  margin: 0;
+  padding:0;
+}
+.like_bar > span {
+  margin-left: 30px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.chImageFlex {
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ch_info {
+  flex: 0.7;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+}
+.bell_icon {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.tube {
+    margin-left: 2px;
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+}
+.cmmt {
+  display: flex;
+  align-items: center;
+}
+.cmmt > span{
+  margin-left: 5px;
+}
+.input_cmmt {
+  display: flex;
+}
+.cmmtInput {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  max-width:200px;
+  width: 100%;
+  margin-left: 10px;
+  background:transparent;
+}
+.sub_button {
+  font-size: 15px;
+  height: 45px;
+  width: 115px;
+  margin-right: 10px;
+  background-color: lightgray;
+  color: white;
+  border: none;
+  background-color: red;
+}
+.description {
+  color: black;
+  max-width: 550px;
+}
+h5 {
+  color: gray;
+  margin: 10px 0px 10px;
+}
+
+.detail {
+    margin-top: 10px;
+  box-shadow: 0 0  10px whitesmoke;
+  padding: 50px;
+  font-family: "Itim", cursive;
+  font-weight:600;
+}
+@media screen  and (max-width:600px){
+    .page {
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    .leftpart{
+        flex: 1;
+        width: 100%;
+    }
+    .rightpart{
+        flex: 1;
+    }
+    span{
+        margin: 3px;
+    }
+    .like_bar{
+        justify-content: space-between;
+    }
+    .moreBtn{
+        display: none;
+    }
+   
+   
+
+}
